@@ -82,6 +82,24 @@ main {
     grid-area: about__me__img;
     justify-self: center; }
 
+#portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "portfolio__heading ." "code__now__web code__now__info"; }
+  #portfolio h2 {
+    font-size: 65px;
+    grid-area: portfolio__heading; }
+  #portfolio h3 {
+    font-size: 40px; }
+  #portfolio p {
+    font-size: 20px; }
+  #portfolio img {
+    height: 40vh; }
+  #portfolio #code__now__web {
+    grid-area: code__now__web; }
+  #portfolio #code__now__info {
+    grid-area: code__now__info; }
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-device-width: 480px) {
   #logo {
@@ -116,6 +134,21 @@ main {
     #about__me p {
       font-size: 16px; }
     #about__me img {
+      height: 28vh;
+      margin-top: 1.5em;
+      margin-bottom: 2em; }
+
+  #portfolio {
+    grid-template-columns: 1fr;
+    grid-template-areas: "portfolio__heading" "code__now__web" "code__now__info";
+    margin-top: 3em; }
+    #portfolio h2 {
+      font-size: 26px; }
+    #portfolio h3 {
+      font-size: 20px; }
+    #portfolio p {
+      font-size: 16px; }
+    #portfolio img {
       height: 28vh;
       margin-top: 1.5em;
       margin-bottom: 2em; } }
