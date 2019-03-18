@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+// RESET
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+header {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+$logo-color: #36A4DC;
+
+body {
+    background: #F8F8F8;
+}
+
+
+.background__img {
+    background: url('../img/background.jpg') center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+#logo {
+    height: 10vh;
+    margin: 1em 0 1em 4em;
+    position: absolute;
+    z-index: 1;
+}
+
+.menu__toggle {
+    margin: 1.5em 4em 1em 0;
+    // position: absolute;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    height: 6vh;
+}
+
+.header__text {
+    color: #fff;
+    height: 100%;
+    margin: 0 4em 0 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        font-size: 80px;
+        margin-bottom: .5em;
+    }
+
+    p {
+        font-size: 25px;
+    }
+}
+
+.down__icon {
+    height: 6vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 480px) {
+    #logo {
+        height: 7.5vh;
+        margin: 1.5em 0 1em 1.5em;
+    }
+
+    .menu__toggle {
+        height: 5.5vh;
+        margin: 2em 1.5em 1em 0;
+    }
+
+    .header__text {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        text-align: center;
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: .5em;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 23px;
+        }
+    }
+}
