@@ -9,7 +9,8 @@ h6,
 p,
 ol,
 ul,
-header {
+header,
+button {
   margin: 0;
   padding: 0;
   font-weight: normal; }
@@ -19,7 +20,8 @@ header {
   font-family: 'Roboto', sans-serif; }
 
 body {
-  background: #F8F8F8; }
+  background: #F8F8F8;
+  line-height: 30px; }
 
 .background__img {
   background: url("../img/background.jpg") center no-repeat;
@@ -70,38 +72,69 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "about__me__heading about__me__img" "about__me__paragraph about__me__img";
-  margin-top: 3em; }
+  align-items: center;
+  margin-top: 10em; }
   #about__me h2 {
     font-size: 65px;
     grid-area: about__me__heading; }
   #about__me p {
     font-size: 20px;
-    grid-area: about__me__paragraph; }
+    grid-area: about__me__paragraph;
+    color: #808080; }
   #about__me img {
     height: 55vh;
     grid-area: about__me__img;
-    justify-self: center; }
+    justify-self: center;
+    align-self: center; }
 
 #portfolio {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "portfolio__heading ." "code__now__web code__now__info"; }
+  grid-template-areas: "portfolio__heading ." "code__now__web code__now__info";
+  align-items: center;
+  margin-top: 10em; }
   #portfolio h2 {
     font-size: 65px;
-    grid-area: portfolio__heading; }
+    grid-area: portfolio__heading;
+    margin-bottom: 1em; }
   #portfolio h3 {
-    font-size: 40px; }
+    font-size: 40px;
+    margin-bottom: .5em; }
   #portfolio p {
-    font-size: 20px; }
+    font-size: 20px;
+    color: #808080; }
   #portfolio img {
     height: 40vh; }
   #portfolio #code__now__web {
     grid-area: code__now__web; }
   #portfolio #code__now__info {
     grid-area: code__now__info; }
+  #portfolio button {
+    background: #36A4DC;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 1em;
+    color: #fff;
+    font-family: 'Roboto', sans-serif; }
+
+#contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "contact__heading ." "contact__paragraph .";
+  align-items: center;
+  margin-top: 10em; }
+  #contact h2 {
+    font-size: 65px;
+    grid-area: contact__heading;
+    margin-bottom: 1em; }
+  #contact p {
+    font-size: 20px;
+    grid-area: contact__paragraph;
+    color: #808080; }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 740px) {
   #logo {
     height: 7.5vh;
     margin: 1.5em 0 1em 1.5em; }
@@ -145,12 +178,23 @@ main {
     #portfolio h2 {
       font-size: 26px; }
     #portfolio h3 {
-      font-size: 20px; }
+      font-size: 20px;
+      text-align: center; }
     #portfolio p {
-      font-size: 16px; }
+      font-size: 16px;
+      text-align: center; }
     #portfolio img {
-      height: 28vh;
+      height: 25vh;
       margin-top: 1.5em;
-      margin-bottom: 2em; } }
+      margin-bottom: 2em; }
+
+  #contact {
+    grid-template-columns: 1fr;
+    grid-template-areas: "contact__heading" "contact__paragraph";
+    margin-top: 3em; }
+    #contact h2 {
+      font-size: 26px; }
+    #contact p {
+      font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */

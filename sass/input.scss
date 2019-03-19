@@ -11,7 +11,8 @@ h6,
 p,
 ol,
 ul,
-header {
+header,
+button {
     margin: 0;
     padding: 0;
     font-weight: normal;
@@ -28,6 +29,7 @@ $logo-color: #36A4DC;
 
 body {
     background: #F8F8F8;
+    line-height: 30px;
 }
 
 // HEADER
@@ -83,61 +85,121 @@ body {
     margin-bottom: 2em;
 }
 
-main{
+main {
     margin: 0 4em 0 4em;
 }
+
 // ABOUT ME
-#about__me{
+#about__me {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "about__me__heading about__me__img"
-    "about__me__paragraph about__me__img";
-    margin-top: 3em;
-    h2{
+        "about__me__heading about__me__img"
+        "about__me__paragraph about__me__img";
+    align-items: center;
+    margin-top: 10em;
+
+
+    h2 {
         font-size: 65px;
         grid-area: about__me__heading;
     }
-    p{
+
+    p {
         font-size: 20px;
         grid-area: about__me__paragraph;
+        color: #808080;
     }
-    img{
+
+
+
+    img {
         height: 55vh;
         grid-area: about__me__img;
         justify-self: center;
+        align-self: center;
     }
 }
+
 // PORTFOLIO
 
-#portfolio{
+#portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "portfolio__heading ."
-    "code__now__web code__now__info";
-    h2{
+        "portfolio__heading ."
+        "code__now__web code__now__info";
+    align-items: center;
+    margin-top: 10em;
+
+    h2 {
         font-size: 65px;
         grid-area: portfolio__heading;
+        margin-bottom: 1em;
+
     }
-    h3{
+
+    h3 {
         font-size: 40px;
+        margin-bottom: .5em;
+
     }
-    p{
+
+    p {
         font-size: 20px;
+        ;
+        color: #808080
     }
-    img{
+
+    img {
         height: 40vh;
     }
-    #code__now__web{
+
+    #code__now__web {
         grid-area: code__now__web;
     }
-    #code__now__info{
+
+    #code__now__info {
         grid-area: code__now__info;
     }
+    button{
+        background: $logo-color;
+        border: none;
+        border-radius: 4px;
+        padding: 5px 10px 5px 10px;
+        margin-top: 1em;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+    }
 }
+
+// CONTACT
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "contact__heading ."
+        "contact__paragraph .";
+    align-items: center;
+    margin-top: 10em;
+
+    h2 {
+        font-size: 65px;
+        grid-area: contact__heading;
+        margin-bottom: 1em;
+
+    }
+
+    p {
+        font-size: 20px;
+        grid-area: contact__paragraph;
+        color: #808080;
+    }
+}
+
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-device-width : 480px) {
+@media only screen and (max-device-width : 740px) {
     // HEADER
 
     #logo {
@@ -166,53 +228,81 @@ main{
         }
     }
 
-    main{
+    main {
         margin-left: 1.5em;
         margin-right: 1.5em;
     }
+
     // ABOUT ME
 
-    #about__me{
+    #about__me {
         grid-template-columns: 1fr;
         grid-template-areas:
-        "about__me__heading"
-        "about__me__img"
-        "about__me__paragraph";
+            "about__me__heading"
+            "about__me__img"
+            "about__me__paragraph";
         margin-top: 3em;
 
-        h2{
+        h2 {
             font-size: 26px;
         }
-        p{
+
+        p {
             font-size: 16px;
         }
-        img{
+
+        img {
             height: 28vh;
             margin-top: 1.5em;
             margin-bottom: 2em;
         }
     }
+
     // PORTFOLIO
-    #portfolio{
+    #portfolio {
         grid-template-columns: 1fr;
         grid-template-areas:
-        "portfolio__heading"
-        "code__now__web"
-        "code__now__info";
+            "portfolio__heading"
+            "code__now__web"
+            "code__now__info";
         margin-top: 3em;
-        h2{
+
+        h2 {
             font-size: 26px;
         }
-        h3{
+
+        h3 {
             font-size: 20px;
+            text-align: center;
         }
-        p{
+
+        p {
             font-size: 16px;
+            text-align: center;
         }
-        img{
-            height: 28vh;
+
+        img {
+            height: 25vh;
             margin-top: 1.5em;
             margin-bottom: 2em;
+        }
+    }
+
+    // CONTACT
+
+    #contact {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "contact__heading"
+            "contact__paragraph";
+        margin-top: 3em;
+
+        h2 {
+            font-size: 26px;
+        }
+
+        p {
+            font-size: 16px;
         }
     }
 }
