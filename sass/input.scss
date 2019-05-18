@@ -128,7 +128,8 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "portfolio__heading ."
-        "code__now__web code__now__info";
+        "code__now__web code__now__info"
+        "woodlee__web woodlee__info";
     align-items: center;
     margin-top: 10em;
 
@@ -161,6 +162,12 @@ main {
 
     #code__now__info {
         grid-area: code__now__info;
+    }
+    #woodlee__web{
+        grid-area: woodlee__web;
+    }
+    #woodlee__info{
+        grid-area: woodlee__info;
     }
     button{
         background: $logo-color;
@@ -198,6 +205,12 @@ main {
     }
 }
 
+
+//TEMP POKEMON
+.pokemon{
+    margin: 100px;
+
+}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-device-width : 740px) {
     // HEADER
@@ -264,7 +277,10 @@ main {
         grid-template-areas:
             "portfolio__heading"
             "code__now__web"
-            "code__now__info";
+            "code__now__info"
+            "woodlee__web"
+            "woodlee__info";
+
         margin-top: 3em;
 
         h2 {
@@ -285,6 +301,16 @@ main {
             height: 25vh;
             margin-top: 1.5em;
             margin-bottom: 2em;
+            margin: 0 auto;
+        }
+        .button__container{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5em;
+            button{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
         }
     }
 
