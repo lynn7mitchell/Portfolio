@@ -90,7 +90,8 @@ main {
 #portfolio {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "portfolio__heading ." "code__now__web code__now__info" "woodlee__web woodlee__info";
+  grid-template-areas: "portfolio__heading ." "code__now__web code__now__info" "pokemon__rpg__web pokemon__rpg__info" "mash__trivia__web mash__trivia__info" "giftastic__web giftastic__info" "train__scheduler__web train__scheduler__info";
+  row-gap: 30px;
   align-items: center;
   margin-top: 10em; }
   #portfolio h2 {
@@ -104,15 +105,27 @@ main {
     font-size: 20px;
     color: #808080; }
   #portfolio img {
-    height: 40vh; }
+    width: 70vh; }
   #portfolio #code__now__web {
     grid-area: code__now__web; }
   #portfolio #code__now__info {
     grid-area: code__now__info; }
-  #portfolio #woodlee__web {
-    grid-area: woodlee__web; }
-  #portfolio #woodlee__info {
-    grid-area: woodlee__info; }
+  #portfolio #pokemon__rpg__web {
+    grid-area: pokemon__rpg__web; }
+  #portfolio #pokemon__rpg__info {
+    grid-area: pokemon__rpg__info; }
+  #portfolio #mash__trivia__web {
+    grid-area: mash__trivia__web; }
+  #portfolio #mash__trivia__info {
+    grid-area: mash__trivia__info; }
+  #portfolio #giftastic__web {
+    grid-area: giftastic__web; }
+  #portfolio #giftastic__info {
+    grid-area: giftastic__info; }
+  #portfolio #train__scheduler__web {
+    grid-area: train__scheduler__web; }
+  #portfolio #train__scheduler__info {
+    grid-area: train__scheduler__info; }
   #portfolio button {
     background: #36A4DC;
     border: none;
@@ -124,7 +137,7 @@ main {
 
 #contact {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-areas: "contact__heading ." "contact__paragraph .";
   align-items: center;
   margin-top: 10em; }
@@ -180,7 +193,8 @@ main {
 
   #portfolio {
     grid-template-columns: 1fr;
-    grid-template-areas: "portfolio__heading" "code__now__web" "code__now__info" "woodlee__web" "woodlee__info";
+    grid-template-areas: "portfolio__heading" "code__now__web" "code__now__info";
+    row-gap: 4em;
     margin-top: 3em; }
     #portfolio h2 {
       font-size: 26px; }
