@@ -129,7 +129,11 @@ main {
     grid-template-areas:
         "portfolio__heading ."
         "code__now__web code__now__info"
-        "woodlee__web woodlee__info";
+        "pokemon__rpg__web pokemon__rpg__info"
+        "mash__trivia__web mash__trivia__info"
+        "giftastic__web giftastic__info"
+        "train__scheduler__web train__scheduler__info";
+        row-gap: 30px;
     align-items: center;
     margin-top: 10em;
 
@@ -153,7 +157,7 @@ main {
     }
 
     img {
-        height: 40vh;
+        width: 70vh;
     }
 
     #code__now__web {
@@ -163,12 +167,36 @@ main {
     #code__now__info {
         grid-area: code__now__info;
     }
-    #woodlee__web{
-        grid-area: woodlee__web;
+    #pokemon__rpg__web{
+        grid-area: pokemon__rpg__web;
     }
-    #woodlee__info{
-        grid-area: woodlee__info;
+    #pokemon__rpg__info{
+        grid-area: pokemon__rpg__info;
     }
+    #mash__trivia__web{
+        grid-area: mash__trivia__web
+    }
+    #mash__trivia__info{
+        grid-area: mash__trivia__info
+    }
+    #giftastic__web{
+        grid-area: giftastic__web;
+    }
+    #giftastic__info{
+        grid-area: giftastic__info;
+    }
+    #train__scheduler__web{
+        grid-area: train__scheduler__web;
+    }
+    #train__scheduler__info{
+        grid-area: train__scheduler__info
+    }
+    // #woodlee__web{
+    //     grid-area: woodlee__web;
+    // }
+    // #woodlee__info{
+    //     grid-area: woodlee__info;
+    // }
     button{
         background: $logo-color;
         border: none;
@@ -184,7 +212,7 @@ main {
 
 #contact {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-areas:
         "contact__heading ."
         "contact__paragraph .";
@@ -278,9 +306,16 @@ main {
             "portfolio__heading"
             "code__now__web"
             "code__now__info"
-            "woodlee__web"
-            "woodlee__info";
-
+            "pokemon__rpg__web"
+            "pokemon__rpg__info"
+            "mash__trivia__web"
+            "mash__trivia__info"
+            "giftastic__web"
+            "giftastic__info"
+            "train__scheduler__web"
+            "train__scheduler__info"
+            ;
+        row-gap: 4em;
         margin-top: 3em;
 
         h2 {
@@ -298,7 +333,7 @@ main {
         }
 
         img {
-            height: 25vh;
+            width: 15vh;
             margin-top: 1.5em;
             margin-bottom: 2em;
             margin: 0 auto;
