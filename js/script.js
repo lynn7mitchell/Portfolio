@@ -1,5 +1,8 @@
-const menuToggleHamburger = document.getElementById("menuToggleHamburger")
-const menuToggleX = document.getElementById("menuToggleX")
+const menuToggleHamburger = document.getElementById("menuToggleHamburger");
+const menuToggleX = document.getElementById("menuToggleX");
+const navLink = document.querySelector("navLink");
+
+console.log(navLink)
 
 menuToggleHamburger.addEventListener('click', event => {
     console.log("works")
@@ -14,3 +17,4 @@ menuToggleX.addEventListener('click', event => {
     menuToggleHamburger.style.display = 'block';
     menuToggleX.style.display = 'none';
 })
+
