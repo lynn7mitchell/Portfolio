@@ -94,7 +94,7 @@ body {
 
 }
 
-nav{
+nav {
     position: fixed;
     background: rgba(0, 0, 0, 0.9);
     top: 0;
@@ -107,7 +107,7 @@ nav{
     display: none;
     z-index: 1;
 
-    ul{
+    ul {
         list-style-type: none;
         display: flex;
         flex-direction: column;
@@ -115,16 +115,18 @@ nav{
         justify-content: center;
         align-items: center;
 
-        a{
+        a {
             color: #fff;
             text-decoration: none;
             margin-bottom: 10%;
         }
-        li{
+
+        li {
             font-size: 2em;
         }
     }
 }
+
 .menu__toggle {
     margin: 1.5em 4em 1em 0;
     // position: absolute;
@@ -132,14 +134,17 @@ nav{
     right: 0;
     z-index: 2;
     height: 6vh;
+
     @include sm {
         height: 5.5vh;
         margin: 2em 1.5em 1em 0;
     }
 }
-#menuToggleX{
+
+#menuToggleX {
     display: none;
 }
+
 .header__text {
     color: #fff;
     height: 100%;
@@ -157,7 +162,7 @@ nav{
         font-size: 25px;
     }
 
-    @include sm{
+    @include sm {
         margin-left: 1.5em;
         margin-right: 1.5em;
         text-align: center;
@@ -186,7 +191,8 @@ nav{
 
 main {
     margin: 0 4em 0 4em;
-    @include sm{
+
+    @include sm {
         margin-left: 1.5em;
         margin-right: 1.5em;
     }
@@ -221,7 +227,7 @@ main {
         align-self: center;
     }
 
-    @include sm{
+    @include sm {
         grid-template-columns: 1fr;
         grid-template-areas:
             "about__me__heading"
@@ -256,8 +262,13 @@ main {
         "pokemon__rpg__web pokemon__rpg__info"
         "mash__trivia__web mash__trivia__info"
         "giftastic__web giftastic__info"
-        "train__scheduler__web train__scheduler__info";
-    row-gap: 30px;
+        "train__schedule__web train__schedule__info";
+    row-gap: 110px;
+
+    @include sm {
+        row-gap: 20px;
+    }
+
     align-items: center;
     margin-top: 10em;
 
@@ -281,7 +292,7 @@ main {
     }
 
     img {
-        height: 10vh;
+        height: 45vh
     }
 
     #code__now__web {
@@ -316,12 +327,12 @@ main {
         grid-area: giftastic__info;
     }
 
-    #train__scheduler__web {
-        grid-area: train__scheduler__web;
+    #train__schedule__web {
+        grid-area: train__schedule__web;
     }
 
-    #train__scheduler__info {
-        grid-area: train__scheduler__info
+    #train__schedule__info {
+        grid-area: train__schedule__info
     }
 
     button {
@@ -333,51 +344,56 @@ main {
         color: #fff;
         font-family: 'Roboto', sans-serif;
     }
-@include sm{
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "portfolio__heading"
-    "code__now__web"
-    "code__now__info"
-    "pokemon__rpg__web"
-    "pokemon__rpg__info"
-    "mash__trivia__web"
-    "mash__trivia__info"
-    "giftastic__web"
-    "giftastic__info"
-    "train__schedule__web"
-    "train__schedule__info";
-    h2 {
-        font-size: 26px;
-    }
-    h3 {
-        font-size: 20px;
-        text-align: center;
-    }
 
-    p {
-        font-size: 16px;
-        text-align: center;
-    }
+    @include sm {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "portfolio__heading"
+            "code__now__web"
+            "code__now__info"
+            "pokemon__rpg__web"
+            "pokemon__rpg__info"
+            "mash__trivia__web"
+            "mash__trivia__info"
+            "giftastic__web"
+            "giftastic__info"
+            "train__schedule__web"
+            "train__schedule__info";
 
-    img {
-        height: auto;
-        width: 80vw;
-        margin-top: 1.5em;
-        margin-bottom: 2em;
-        margin: 0 auto;
-    }
-    .button__container{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 5em;
-        button{
-            margin-left: 10px;
-            margin-right: 10px;
+        h2 {
+            font-size: 26px;
+        }
+
+        h3 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        img {
+            height: auto;
+            width: 70vw;
+            margin-top: 1.5em;
+            margin-bottom: 2em;
+            margin: 0 auto;
+        }
+
+        .button__container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5em;
+
+            button {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
         }
     }
-}
-   
+
 }
 
 // CONTACT
@@ -404,7 +420,7 @@ main {
         color: #808080;
     }
 
-    @include sm{
+    @include sm {
         grid-template-columns: 1fr;
         grid-template-areas:
             "contact__heading"
@@ -420,27 +436,36 @@ main {
         }
     }
 }
-footer{
+
+footer {
     margin-top: 10%;
     padding-top: 1em;
     text-align: center;
     color: #fff;
     background: #3091C2;
 
+    p {
+        margin-bottom: .5em;
+    }
 
-    .footer__icons{
+    .footer__icons {
         display: flex;
         justify-content: space-evenly;
 
-        img{
-            width: 15vw;
+        img {
+            width: 5vw;
             margin-bottom: 1em;
+
+            @include sm {
+                width: 15vh;
+            }
         }
     }
-    .copyright{
+
+    .copyright {
         background: #17455C;
         padding-bottom: .5em;
-        padding-top: .5em; 
+        padding-top: .5em;
 
     }
 }

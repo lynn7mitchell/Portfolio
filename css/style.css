@@ -155,10 +155,13 @@ main {
 #portfolio {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "portfolio__heading ." "code__now__web code__now__info" "pokemon__rpg__web pokemon__rpg__info" "mash__trivia__web mash__trivia__info" "giftastic__web giftastic__info" "train__scheduler__web train__scheduler__info";
-  row-gap: 30px;
+  grid-template-areas: "portfolio__heading ." "code__now__web code__now__info" "pokemon__rpg__web pokemon__rpg__info" "mash__trivia__web mash__trivia__info" "giftastic__web giftastic__info" "train__schedule__web train__schedule__info";
+  row-gap: 110px;
   align-items: center;
   margin-top: 10em; }
+  @media (max-width: 576px) {
+    #portfolio {
+      row-gap: 20px; } }
   #portfolio h2 {
     font-size: 65px;
     grid-area: portfolio__heading;
@@ -170,7 +173,7 @@ main {
     font-size: 20px;
     color: #808080; }
   #portfolio img {
-    height: 10vh; }
+    height: 45vh; }
   #portfolio #code__now__web {
     grid-area: code__now__web; }
   #portfolio #code__now__info {
@@ -187,10 +190,10 @@ main {
     grid-area: giftastic__web; }
   #portfolio #giftastic__info {
     grid-area: giftastic__info; }
-  #portfolio #train__scheduler__web {
-    grid-area: train__scheduler__web; }
-  #portfolio #train__scheduler__info {
-    grid-area: train__scheduler__info; }
+  #portfolio #train__schedule__web {
+    grid-area: train__schedule__web; }
+  #portfolio #train__schedule__info {
+    grid-area: train__schedule__info; }
   #portfolio button {
     background: #36A4DC;
     border: none;
@@ -213,7 +216,7 @@ main {
         text-align: center; }
       #portfolio img {
         height: auto;
-        width: 80vw;
+        width: 70vw;
         margin-top: 1.5em;
         margin-bottom: 2em;
         margin: 0 auto; }
@@ -255,12 +258,17 @@ footer {
   text-align: center;
   color: #fff;
   background: #3091C2; }
+  footer p {
+    margin-bottom: .5em; }
   footer .footer__icons {
     display: flex;
     justify-content: space-evenly; }
     footer .footer__icons img {
-      width: 15vw;
+      width: 5vw;
       margin-bottom: 1em; }
+      @media (max-width: 576px) {
+        footer .footer__icons img {
+          width: 15vh; } }
   footer .copyright {
     background: #17455C;
     padding-bottom: .5em;
