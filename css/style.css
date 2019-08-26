@@ -41,7 +41,7 @@ body {
       margin: 1.5em 0 1em 1.5em; } }
 
 nav {
-  position: fixedg;
+  position: fixed;
   background: rgba(0, 0, 0, 0.9);
   top: 0;
   bottom: 0;
