@@ -35,6 +35,10 @@ body {
   margin: 1em 0 1em 4em;
   position: absolute;
   z-index: 1; }
+  @media (max-width: 576px) {
+    #logo {
+      height: 7.5vh;
+      margin: 1.5em 0 1em 1.5em; } }
 
 .menu__toggle {
   margin: 1.5em 4em 1em 0;
@@ -42,6 +46,10 @@ body {
   right: 0;
   z-index: 1;
   height: 6vh; }
+  @media (max-width: 576px) {
+    .menu__toggle {
+      height: 5.5vh;
+      margin: 2em 1.5em 1em 0; } }
 
 .header__text {
   color: #fff;
@@ -55,6 +63,17 @@ body {
     margin-bottom: .5em; }
   .header__text p {
     font-size: 25px; }
+  @media (max-width: 576px) {
+    .header__text {
+      margin-left: 1.5em;
+      margin-right: 1.5em;
+      text-align: center; }
+      .header__text h1 {
+        font-size: 30px;
+        margin-bottom: .5em; }
+      .header__text p {
+        font-size: 16px;
+        line-height: 23px; } }
 
 .down__icon {
   height: 6vh;
@@ -67,6 +86,10 @@ body {
 
 main {
   margin: 0 4em 0 4em; }
+  @media (max-width: 576px) {
+    main {
+      margin-left: 1.5em;
+      margin-right: 1.5em; } }
 
 #about__me {
   display: grid;
@@ -86,6 +109,19 @@ main {
     grid-area: about__me__img;
     justify-self: center;
     align-self: center; }
+  @media (max-width: 576px) {
+    #about__me {
+      grid-template-columns: 1fr;
+      grid-template-areas: "about__me__heading" "about__me__img" "about__me__paragraph";
+      margin-top: 3em; }
+      #about__me h2 {
+        font-size: 26px; }
+      #about__me p {
+        font-size: 16px; }
+      #about__me img {
+        height: 28vh;
+        margin-top: 1.5em;
+        margin-bottom: 2em; } }
 
 #portfolio {
   display: grid;
@@ -105,7 +141,7 @@ main {
     font-size: 20px;
     color: #808080; }
   #portfolio img {
-    width: 70vh; }
+    height: 70vh; }
   #portfolio #code__now__web {
     grid-area: code__now__web; }
   #portfolio #code__now__info {
@@ -134,6 +170,31 @@ main {
     margin-top: 1em;
     color: #fff;
     font-family: 'Roboto', sans-serif; }
+  @media (max-width: 576px) {
+    #portfolio {
+      grid-template-columns: 1fr;
+      grid-template-areas: "portfolio__heading" "code__now__web" "code__now__info" "pokemon__rpg__web" "pokemon__rpg__info" "mash__trivia__web" "mash__trivia__info" "giftastic__web" "giftastic__info" "train__scheduler__web" "train__scheduler__info"; }
+      #portfolio h2 {
+        font-size: 26px; }
+      #portfolio h3 {
+        font-size: 20px;
+        text-align: center; }
+      #portfolio p {
+        font-size: 16px;
+        text-align: center; }
+      #portfolio img {
+        height: auto;
+        width: 80vw;
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+        margin: 0 auto; }
+      #portfolio .button__container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5em; }
+        #portfolio .button__container button {
+          margin-left: 10px;
+          margin-right: 10px; } }
 
 #contact {
   display: grid;
@@ -149,81 +210,19 @@ main {
     font-size: 20px;
     grid-area: contact__paragraph;
     color: #808080; }
+  @media (max-width: 576px) {
+    #contact {
+      grid-template-columns: 1fr;
+      grid-template-areas: "contact__heading" "contact__paragraph";
+      margin-top: 3em; }
+      #contact h2 {
+        font-size: 26px; }
+      #contact p {
+        font-size: 16px; } }
 
 .pokemon {
   margin: 100px; }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-device-width: 740px) {
-  #logo {
-    height: 7.5vh;
-    margin: 1.5em 0 1em 1.5em; }
-
-  .menu__toggle {
-    height: 5.5vh;
-    margin: 2em 1.5em 1em 0; }
-
-  .header__text {
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-    text-align: center; }
-    .header__text h1 {
-      font-size: 30px;
-      margin-bottom: .5em; }
-    .header__text p {
-      font-size: 16px;
-      line-height: 23px; }
-
-  main {
-    margin-left: 1.5em;
-    margin-right: 1.5em; }
-
-  #about__me {
-    grid-template-columns: 1fr;
-    grid-template-areas: "about__me__heading" "about__me__img" "about__me__paragraph";
-    margin-top: 3em; }
-    #about__me h2 {
-      font-size: 26px; }
-    #about__me p {
-      font-size: 16px; }
-    #about__me img {
-      height: 28vh;
-      margin-top: 1.5em;
-      margin-bottom: 2em; }
-
-  #portfolio {
-    grid-template-columns: 1fr;
-    grid-template-areas: "portfolio__heading" "code__now__web" "code__now__info";
-    row-gap: 4em;
-    margin-top: 3em; }
-    #portfolio h2 {
-      font-size: 26px; }
-    #portfolio h3 {
-      font-size: 20px;
-      text-align: center; }
-    #portfolio p {
-      font-size: 16px;
-      text-align: center; }
-    #portfolio img {
-      height: 25vh;
-      margin-top: 1.5em;
-      margin-bottom: 2em;
-      margin: 0 auto; }
-    #portfolio .button__container {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 5em; }
-      #portfolio .button__container button {
-        margin-left: 10px;
-        margin-right: 10px; }
-
-  #contact {
-    grid-template-columns: 1fr;
-    grid-template-areas: "contact__heading" "contact__paragraph";
-    margin-top: 3em; }
-    #contact h2 {
-      font-size: 26px; }
-    #contact p {
-      font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */
