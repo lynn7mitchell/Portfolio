@@ -115,8 +115,12 @@ nav{
         justify-content: center;
         align-items: center;
 
-        li{
+        a{
+            color: #fff;
+            text-decoration: none;
             margin-bottom: 10%;
+        }
+        li{
             font-size: 2em;
         }
     }
