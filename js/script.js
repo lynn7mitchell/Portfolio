@@ -1,6 +1,6 @@
 const menuToggleHamburger = document.getElementById("menuToggleHamburger");
 const menuToggleX = document.getElementById("menuToggleX");
-const navLink = document.querySelector("navLink");
+const navLink = document.querySelectorAll(".nav-link");
 
 console.log(navLink)
 
@@ -19,4 +19,15 @@ menuToggleX.addEventListener('click', event => {
 })
 
 
+// navLink.addEventListener('click', event =>{
+//     document.querySelector("nav").style.display = 'none';
+//     menuToggleHamburger.style.display = 'block';
+//     menuToggleX.style.display = 'none';
+// })
 
+const closeNav = function(){
+    console.log("X works")
+    document.querySelector("nav").style.display = 'none';
+    menuToggleHamburger.style.display = 'block';
+    menuToggleX.style.display = 'none';
+}
