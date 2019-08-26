@@ -19,6 +19,9 @@ button {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   background: #F8F8F8;
   line-height: 30px; }

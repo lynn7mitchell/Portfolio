@@ -65,6 +65,10 @@ $screen-xl-min: 1200px;
     font-family: 'Roboto', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 $logo-color: #36A4DC;
 
 body {
