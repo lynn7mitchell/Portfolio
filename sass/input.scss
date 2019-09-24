@@ -267,6 +267,7 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "portfolio__heading ."
+        "woodlee__web woodlee__info"
         "code__now__web code__now__info"
         "pokemon__rpg__web pokemon__rpg__info"
         "mash__trivia__web mash__trivia__info"
@@ -303,7 +304,13 @@ main {
     img {
         height: 45vh
     }
+    #woodlee__web {
+        grid-area: woodlee__web;
+    }
 
+    #woodlee__info {
+        grid-area: woodlee__info;
+    }
     #code__now__web {
         grid-area: code__now__web;
     }
@@ -358,6 +365,8 @@ main {
         grid-template-columns: 1fr;
         grid-template-areas:
             "portfolio__heading"
+            "woodlee__web"
+            "woodlee__info"
             "code__now__web"
             "code__now__info"
             "pokemon__rpg__web"

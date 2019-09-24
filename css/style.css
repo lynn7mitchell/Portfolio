@@ -164,7 +164,7 @@ main {
 #portfolio {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "portfolio__heading ." "code__now__web code__now__info" "pokemon__rpg__web pokemon__rpg__info" "mash__trivia__web mash__trivia__info" "giftastic__web giftastic__info" "train__schedule__web train__schedule__info";
+  grid-template-areas: "portfolio__heading ." "woodlee__web woodlee__info" "code__now__web code__now__info" "pokemon__rpg__web pokemon__rpg__info" "mash__trivia__web mash__trivia__info" "giftastic__web giftastic__info" "train__schedule__web train__schedule__info";
   row-gap: 110px;
   align-items: center;
   margin-top: 10em; }
@@ -183,6 +183,10 @@ main {
     color: #808080; }
   #portfolio img {
     height: 45vh; }
+  #portfolio #woodlee__web {
+    grid-area: woodlee__web; }
+  #portfolio #woodlee__info {
+    grid-area: woodlee__info; }
   #portfolio #code__now__web {
     grid-area: code__now__web; }
   #portfolio #code__now__info {
@@ -214,7 +218,7 @@ main {
   @media (max-width: 576px) {
     #portfolio {
       grid-template-columns: 1fr;
-      grid-template-areas: "portfolio__heading" "code__now__web" "code__now__info" "pokemon__rpg__web" "pokemon__rpg__info" "mash__trivia__web" "mash__trivia__info" "giftastic__web" "giftastic__info" "train__schedule__web" "train__schedule__info"; }
+      grid-template-areas: "portfolio__heading" "woodlee__web" "woodlee__info" "code__now__web" "code__now__info" "pokemon__rpg__web" "pokemon__rpg__info" "mash__trivia__web" "mash__trivia__info" "giftastic__web" "giftastic__info" "train__schedule__web" "train__schedule__info"; }
       #portfolio h2 {
         font-size: 26px; }
       #portfolio h3 {
