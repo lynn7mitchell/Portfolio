@@ -50,7 +50,7 @@ nav {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   color: #fff;
   display: none;
@@ -65,7 +65,10 @@ nav {
     nav ul a {
       color: #fff;
       text-decoration: none;
-      margin-bottom: 10%; }
+      margin-bottom: 5%; }
+      @media (max-width: 576px) {
+        nav ul a {
+          margin-bottom: 15%; } }
     nav ul li {
       font-size: 2em; }
 
