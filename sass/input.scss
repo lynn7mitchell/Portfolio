@@ -268,7 +268,7 @@ main {
     grid-template-areas:
         "portfolio__heading ."
         "japanese__writing__web japanese__writing__info"
-        "test test-info";
+        "youthgroup__web youthgroup__info";
     row-gap: 110px;
 
     @include sm {
@@ -388,8 +388,8 @@ main {
             "portfolio__heading"
             "japanese__writing__web"
             "japanese__writing__info"
-            "woodlee__web"
-            "woodlee__info"
+            "youthgroup__web"
+            "youthgroup__info"
             // "code__now__web"
             // "code__now__info"
             // "pokemon__rpg__web"

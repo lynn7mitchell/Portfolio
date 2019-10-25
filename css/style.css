@@ -164,7 +164,7 @@ main {
 #portfolio {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "portfolio__heading ." "japanese__writing__web japanese__writing__info" "test test-info";
+  grid-template-areas: "portfolio__heading ." "japanese__writing__web japanese__writing__info" "youthgroup__web youthgroup__info";
   row-gap: 110px;
   align-items: center;
   margin-top: 10em; }
@@ -234,7 +234,7 @@ main {
   @media (max-width: 576px) {
     #portfolio {
       grid-template-columns: 1fr;
-      grid-template-areas: "portfolio__heading" "japanese__writing__web" "japanese__writing__info" "woodlee__web" "woodlee__info"; }
+      grid-template-areas: "portfolio__heading" "japanese__writing__web" "japanese__writing__info" "youthgroup__web" "youthgroup__info"; }
       #portfolio h2 {
         font-size: 26px; }
       #portfolio h3 {
