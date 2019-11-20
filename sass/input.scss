@@ -268,6 +268,7 @@ main {
     grid-template-areas:
         "portfolio__heading ."
         "japanese__writing__web japanese__writing__info"
+        "budget__web budget__info"
         "youthgroup__web youthgroup__info";
     row-gap: 110px;
 
@@ -309,6 +310,12 @@ main {
     }
     #japanese__writing__info{
         grid-area: japanese__writing__info;
+    }
+    #budget__web{
+        grid-area: budget__web;
+    }
+    #budget__info{
+        grid-area: budget__info;
     }
     #youthgroup__web{
         grid-area: youthgroup__web;
@@ -388,6 +395,8 @@ main {
             "portfolio__heading"
             "japanese__writing__web"
             "japanese__writing__info"
+            "budget__web"
+            "budget__info"
             "youthgroup__web"
             "youthgroup__info"
             // "code__now__web"

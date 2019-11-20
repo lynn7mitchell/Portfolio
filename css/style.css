@@ -164,7 +164,7 @@ main {
 #portfolio {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "portfolio__heading ." "japanese__writing__web japanese__writing__info" "youthgroup__web youthgroup__info";
+  grid-template-areas: "portfolio__heading ." "japanese__writing__web japanese__writing__info" "budget__web budget__info" "youthgroup__web youthgroup__info";
   row-gap: 110px;
   align-items: center;
   margin-top: 10em; }
@@ -189,6 +189,10 @@ main {
     grid-area: japanese__writing__web; }
   #portfolio #japanese__writing__info {
     grid-area: japanese__writing__info; }
+  #portfolio #budget__web {
+    grid-area: budget__web; }
+  #portfolio #budget__info {
+    grid-area: budget__info; }
   #portfolio #youthgroup__web {
     grid-area: youthgroup__web; }
   #portfolio #youthgroup__info {
@@ -234,7 +238,7 @@ main {
   @media (max-width: 576px) {
     #portfolio {
       grid-template-columns: 1fr;
-      grid-template-areas: "portfolio__heading" "japanese__writing__web" "japanese__writing__info" "youthgroup__web" "youthgroup__info"; }
+      grid-template-areas: "portfolio__heading" "japanese__writing__web" "japanese__writing__info" "budget__web" "budget__info" "youthgroup__web" "youthgroup__info"; }
       #portfolio h2 {
         font-size: 26px; }
       #portfolio h3 {
