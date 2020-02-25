@@ -17,13 +17,13 @@ button {
 
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 html {
   scroll-behavior: smooth; }
 
 body {
-  background: #F8F8F8;
+  background: #f8f8f8;
   line-height: 30px; }
 
 .background__img {
@@ -95,7 +95,7 @@ nav {
   justify-content: center; }
   .header__text h1 {
     font-size: 70px;
-    margin-bottom: .5em; }
+    margin-bottom: 0.5em; }
   .header__text p {
     font-size: 24px; }
   @media (max-width: 576px) {
@@ -105,7 +105,7 @@ nav {
       text-align: center; }
       .header__text h1 {
         font-size: 30px;
-        margin-bottom: .5em; }
+        margin-bottom: 0.5em; }
       .header__text p {
         font-size: 16px;
         line-height: 23px; } }
@@ -145,7 +145,7 @@ main {
     justify-self: center;
     align-self: center; }
   #about__me a {
-    color: #36A4DC;
+    color: #36a4dc;
     text-decoration: none; }
   @media (max-width: 576px) {
     #about__me {
@@ -177,7 +177,7 @@ main {
     margin-bottom: 1em; }
   #portfolio h3 {
     font-size: 40px;
-    margin-bottom: .5em; }
+    margin-bottom: 0.5em; }
   #portfolio p {
     font-size: 20px;
     color: #808080; }
@@ -197,44 +197,14 @@ main {
     grid-area: youthgroup__web; }
   #portfolio #youthgroup__info {
     grid-area: youthgroup__info; }
-  #portfolio #grillem__web {
-    grid-area: grillem__web; }
-  #portfolio #grillem__info {
-    grid-area: grillem__info; }
-  #portfolio #test-info {
-    grid-area: test-info; }
-  #portfolio #woodlee__web {
-    grid-area: woodlee__web; }
-  #portfolio #woodlee__info {
-    grid-area: woodlee__info; }
-  #portfolio #code__now__web {
-    grid-area: code__now__web; }
-  #portfolio #code__now__info {
-    grid-area: code__now__info; }
-  #portfolio #pokemon__rpg__web {
-    grid-area: pokemon__rpg__web; }
-  #portfolio #pokemon__rpg__info {
-    grid-area: pokemon__rpg__info; }
-  #portfolio #mash__trivia__web {
-    grid-area: mash__trivia__web; }
-  #portfolio #mash__trivia__info {
-    grid-area: mash__trivia__info; }
-  #portfolio #giftastic__web {
-    grid-area: giftastic__web; }
-  #portfolio #giftastic__info {
-    grid-area: giftastic__info; }
-  #portfolio #train__schedule__web {
-    grid-area: train__schedule__web; }
-  #portfolio #train__schedule__info {
-    grid-area: train__schedule__info; }
   #portfolio button {
-    background: #36A4DC;
+    background: #36a4dc;
     border: none;
     border-radius: 4px;
     padding: 5px 10px 5px 10px;
     margin-top: 1em;
     color: #fff;
-    font-family: 'Roboto', sans-serif; }
+    font-family: "Roboto", sans-serif; }
   @media (max-width: 576px) {
     #portfolio {
       grid-template-columns: 1fr;
@@ -261,6 +231,22 @@ main {
           margin-left: 10px;
           margin-right: 10px; } }
 
+#graphic__portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: " .  book__covers__info" " . all__logos__info" " . mrbones__info" " . gorillaz__info" ". code__now__info";
+  row-gap: 110px; }
+  #graphic__portfolio #book__covers__info {
+    grid-area: book__covers__info; }
+  #graphic__portfolio #all__logos__info {
+    grid-area: all__logos__info; }
+  #graphic__portfolio #mrbones__info {
+    grid-area: mrbones__info; }
+  #graphic__portfolio #gorillaz__info {
+    grid-area: gorillaz__info; }
+  #graphic__portfolio #code__now__info {
+    grid-area: code__now__info; }
+
 #contact {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -276,7 +262,7 @@ main {
     grid-area: contact__paragraph;
     color: #808080; }
   #contact a {
-    color: #36A4DC;
+    color: #36a4dc;
     text-decoration: none; }
   @media (max-width: 576px) {
     #contact {
@@ -293,9 +279,9 @@ footer {
   padding-top: 1em;
   text-align: center;
   color: #fff;
-  background: #3091C2; }
+  background: #3091c2; }
   footer p {
-    margin-bottom: .5em; }
+    margin-bottom: 0.5em; }
   footer .footer__icons {
     display: flex;
     justify-content: space-evenly; }
@@ -306,8 +292,8 @@ footer {
         footer .footer__icons img {
           width: 10vh; } }
   footer .copyright {
-    background: #17455C;
-    padding-bottom: .5em;
-    padding-top: .5em; }
+    background: #17455c;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em; }
 
 /*# sourceMappingURL=style.css.map */
