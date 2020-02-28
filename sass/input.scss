@@ -381,11 +381,11 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    " .  book__covers__info"
-    " . all__logos__info"
-    " . mrbones__info"
-    " . gorillaz__info"
-    ". code__now__info";
+    "book__covers__info"
+    "all__logos__info"
+    "mrbones__info"
+    "gorillaz__info"
+    "code__now__info";
 
     row-gap: 110px;
   
@@ -404,6 +404,18 @@ main {
   }
   #code__now__info {
     grid-area: code__now__info;
+  }
+
+  @include sm {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    " .  book__covers__info"
+    " . all__logos__info"
+    " . mrbones__info"
+    " . gorillaz__info"
+    ". code__now__info"
+
+  
   }
 }
 

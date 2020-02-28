@@ -234,7 +234,7 @@ main {
 #graphic__portfolio {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: " .  book__covers__info" " . all__logos__info" " . mrbones__info" " . gorillaz__info" ". code__now__info";
+  grid-template-areas: "book__covers__info" "all__logos__info" "mrbones__info" "gorillaz__info" "code__now__info";
   row-gap: 110px; }
   #graphic__portfolio #book__covers__info {
     grid-area: book__covers__info; }
@@ -246,6 +246,10 @@ main {
     grid-area: gorillaz__info; }
   #graphic__portfolio #code__now__info {
     grid-area: code__now__info; }
+  @media (max-width: 576px) {
+    #graphic__portfolio {
+      grid-template-columns: 1fr;
+      grid-template-areas: " .  book__covers__info" " . all__logos__info" " . mrbones__info" " . gorillaz__info" ". code__now__info"; } }
 
 #contact {
   display: grid;
