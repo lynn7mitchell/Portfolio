@@ -134,7 +134,8 @@ main {
   margin-top: 10em; }
   #about__me h2 {
     font-size: 65px;
-    grid-area: about__me__heading; }
+    grid-area: about__me__heading;
+    margin-bottom: 1em; }
   #about__me p {
     font-size: 20px;
     grid-area: about__me__paragraph;

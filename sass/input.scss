@@ -216,6 +216,7 @@ main {
   h2 {
     font-size: 65px;
     grid-area: about__me__heading;
+    margin-bottom: 1em;
   }
 
   p {
@@ -318,7 +319,6 @@ main {
   #youthgroup__info {
     grid-area: youthgroup__info;
   }
- 
 
   button {
     background: $logo-color;
@@ -372,23 +372,21 @@ main {
       }
     }
   }
-
 }
 
 // GRAPHIC DESIGN SECTION BEING WORKED ON
 
 #graphic__portfolio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
     "book__covers__info"
     "all__logos__info"
     "mrbones__info"
     "gorillaz__info"
     "code__now__info";
 
-    row-gap: 110px;
-  
+  row-gap: 110px;
 
   #book__covers__info {
     grid-area: book__covers__info;
@@ -399,7 +397,7 @@ main {
   #mrbones__info {
     grid-area: mrbones__info;
   }
-  #gorillaz__info{
+  #gorillaz__info {
     grid-area: gorillaz__info;
   }
   #code__now__info {
@@ -409,13 +407,11 @@ main {
   @include sm {
     grid-template-columns: 1fr;
     grid-template-areas:
-    " .  book__covers__info"
-    " . all__logos__info"
-    " . mrbones__info"
-    " . gorillaz__info"
-    ". code__now__info"
-
-  
+      " .  book__covers__info"
+      " . all__logos__info"
+      " . mrbones__info"
+      " . gorillaz__info"
+      ". code__now__info";
   }
 }
 
