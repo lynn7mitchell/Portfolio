@@ -266,8 +266,8 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "portfolio__heading ."
-    "feed__web feed__info"
     "japanese__writing__web japanese__writing__info"
+    "feed__web feed__info"
     "budget__web budget__info";
   // "youthgroup__web youthgroup__info";
   row-gap: 110px;
@@ -302,10 +302,10 @@ main {
   #portfolio__heading {
     grid-area: portfolio__heading;
   }
-  #feed__web{
+  #feed__web {
     grid-area: feed__web;
   }
-  #feed__info{
+  #feed__info {
     grid-area: feed__info;
   }
   #japanese__writing__web {
@@ -341,10 +341,10 @@ main {
     grid-template-columns: 1fr;
     grid-template-areas:
       "portfolio__heading"
-      "feed__web"
-      "feed__info"
       "japanese__writing__web"
       "japanese__writing__info"
+      "feed__web"
+      "feed__info"
       "budget__web"
       "budget__info";
 
