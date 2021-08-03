@@ -1,148 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-
-
-<!-- 
-
-TODO LIST
-
-lines under headers
-
-animations
-
-
-idea parkinglot
-
-dark mode
-
-
- -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Lynn Mitchell</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <section class="background__img">
-            <img src="img/logo.png" alt="Lynn Mitchell" id="logo">
-            <img src="img/menu.svg" alt="menu toggle" class="menu__toggle" id="menuToggleHamburger">
-            <img src="img/clear.svg" alt="menu toggle clear" class="menu__toggle" id="menuToggleX"> 
-            <div class="header__text">
-                <h1>Full Stack Developer</h1>
-                <p>My mission is to continue to learn new technologies while trying to help you create a website that
-                    will take your business, start-up, or idea to the next level.</p>
-            </div>
-            
-            <a href="#about__me"><img src="img/down-icon.svg" alt="down icon" class="down__icon"></a>
-            
-        </section>
+      <nav>
+        <img src="./img/logo-symbol.png" alt="Logo" />
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+
+      <section>
+        <p>Hello, World! My name is</p>
+        <h1>Lynn Mitchell</h1>
+        <h2>Full Stack Web Developer</h2>
+        <button>Contact Me</button>
+      </section>
+
+      <section>
+          <img src="./img/profile.png" alt="Lynn Mitchell">
+      </section>
     </header>
 
-    <nav>
-        <ul>
-            <a href="#" class="nav-link" onclick=closeNav()><li>Home</li></a>
-            <a href="#about__me" class="nav-link" onclick=closeNav()><li>About</li></a>
-            <a href="#portfolio" class="nav-link" onclick=closeNav()><li>Portfolio</li></a>
-            <a href="#contact" class="nav-link" onclick=closeNav()><li>Contact</li></a>
-        </ul>
-    </nav>
-    
-    <main>
-        <!-- ABOUT ME -->
-
-        <article id="about__me">
-            <div><h2>About Me</h2></div>
-            <p>Hello world, my name is Lynn Mitchell. I am a full stack web developer from Nashville Tennessee. I
-                am a
-                recent graduate from Vanderbilt's Full Stack Development bootcamp and the Art Institute of TN - Nashville with a BFA in graphic and web design with
-                a
-                focus on
-                web design.
-                <br><br>
-                My Skillset includes HTML, CSS, SASS, JavaScript, The MERN stack, and many programs
-                in
-                the Adobe Creative Cloud.
-                <br><br>
-                To view my resume <strong><a href="Resume.pdf">Click Here!</a></strong></p>
-            <img src="img/profile-circle.png" alt="Lynn Mitchell">
-        </article>
-
-        <!-- PORTFOLIO -->
-        <article id="portfolio">
-            <h2 id="portfolio__heading">Portfolio</h2>
-            
-            <!-- FEED -->
-            <img src="img/feed-mockup.png" id="feed__web" alt="FEED Social Media"/>
-            <section id="feed__info">
-                <h3>Feed</h3>
-                <p>FEED is a simple social media app that allows a user to create an account, upload a profile picture, follow people, post, like, comment, share, and chat. This responsive webapp was built using <strong>Mongo DB, Mongoose ODM, Express.js, React.js, and Node.js</strong></p>
-                <br>
-                <p>This web app is hosted on heroku so it may take a minute to load</p>
-                <div class="button__container">
-                    <a href="http://feed-social-media.herokuapp.com/"><button>View Website</button></a> <a href="https://github.com/lynn7mitchell/feed"><button>View Code</button></a>
-                </div>
-            </section>  
-
-            <!-- Japanese Writing App -->
-            <img src="img/japanese-writing-2021.png" id="japanese__writing__web" alt="Japanese Writing App"/>
-            <section id="japanese__writing__info">
-                <h3>Japanese Writing App</h3>
-                <p>The Japanese Writing App was created to help people learn the Japanese writing systems Hiragana and Katakana. This responsive webapp was built using <strong>Mongo DB, Mongoose ODM, Express.js, Tailwind.css, React.js, and Node.js</strong></p>
-                <br>
-                <p>This web app is hosted on heroku so it may take a minute to load</p>
-                <div class="button__container">
-                    <a href="https://japanese-writing.herokuapp.com/"><button>View Website</button></a> <a href="https://github.com/lynn7mitchell/japanese-writing"><button>View Code</button></a>
-                </div>
-            </section>
-
-            <!-- Budget Master -->
-            <img src="img/budget-master.png" id="budget__web" alt="budget-master"/>
-            <section id="budget__info">
-                <h3>Budget Master</h3>
-                <p>Budget Master is a simple budget app that lets you create budgets and add transactions. This responsive webapp was built using <strong>Mongo DB, Mongoose ODM, Express.js, React.js, and Node.js</strong></p>
-                <br>
-                <p>This web app is hosted on heroku so it may take a minute to load</p>
-                <div class="button__container">
-                    <a href="https://mern-budget-app.herokuapp.com/"><button>View Website</button></a> <a href="https://github.com/lynn7mitchell/budget-app"><button>View Code</button></a>
-                </div>
-            </section>
-            
-        </article>
-
-            
-           
-
-
-        <!-- CONTACT -->
-        <article id="contact">
-            <h2>Contact Me</h2>
-            <p>
-                To contact me about any job positions that are available or if you are in need of a personalized web
-                site for your business or start up email me at
-                lynn7mitchell@gmail.com
-                <br><br>
-                To view my resume <strong><a href="Resume.pdf">Click Here!</a></strong></p>
-            </p>
-        </article>
-
-    </main>
-
-    <footer>
-        <div class="footer__icons">
-            <a href="https://www.linkedin.com/in/lynn-mitchell-4b1734118/"><img src="img/iconfinder_linkedin_circle_black_107159.png" alt="Linked In"></a>
-            <a href="https://github.com/lynn7mitchell"><img src="img/iconfinder_github_circle_black_107161.png" alt="Github"></a>
-        </div>
-        <p>This website was created with <strong>HTML</strong>, <strong>CSS</strong>, <strong>SASS</strong>, and <strong>JavaScript</strong> without any frameworks or libraries</p>
-        <div class="copyright"> <p> &copy; Copyright 2019 </p></div>
-    </footer>
-    <script src="js/script.js"></script>
-</body>
-
+    <script src="./js/script.js">
+        
+    </script>
+  </body>
 </html>
