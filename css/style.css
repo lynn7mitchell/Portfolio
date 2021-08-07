@@ -33,18 +33,47 @@ nav {
   top: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  z-index: 1; }
+  @media (max-width: 576px) {
+    nav {
+      justify-content: center;
+      text-align: center; } }
   nav img {
     max-width: 3em; }
+    @media (max-width: 576px) {
+      nav img {
+        position: absolute;
+        left: 0; } }
   nav ul {
     width: 25%;
     list-style: none;
     display: flex;
     justify-content: space-evenly; }
+    @media (max-width: 576px) {
+      nav ul {
+        background: #121212;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10em;
+        width: 100%; } }
     nav ul li {
-      padding-bottom: 5px; }
+      padding-bottom: 5px;
+      margin-bottom: 10px; }
     nav ul li:hover {
       border-bottom: 2px solid #36a4dc; }
+  nav i {
+    position: absolute;
+    right: 1em; }
+  nav .menu__toggle {
+    display: none; }
+  @media (max-width: 576px) {
+    nav #menuToggleX {
+      display: none; }
+    nav #menuToggleHamburger {
+      display: block; } }
 
 header {
   display: flex;
