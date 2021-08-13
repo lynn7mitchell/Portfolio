@@ -507,6 +507,9 @@ $screen-xl-min: 1200px;
 
 $logo-color: #36a4dc;
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   height: 100vh;
   background: #121212;
@@ -648,6 +651,10 @@ header {
   }
   #down__arrow {
     cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
     animation: slidein 2s;
     @keyframes slidein {
       to {
@@ -655,15 +662,6 @@ header {
       }
       from {
         opacity: 0;
-      }
-    }
-    position: absolute;
-    right: 50%;
-    i {
-      font-size: 40px;
-      @include sm {
-        right: 45%;
-        bottom: -5em;
       }
     }
   }
@@ -694,4 +692,69 @@ button {
   max-width: 10rem;
   font-weight: 700;
   cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 16em;
+  width: 90%;
+  h2 {
+    margin-bottom: 3em;
+  }
+  section {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    gap: 5em;
+    margin-bottom: 15em;
+    text-align: justify;
+    @include sm {
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      margin-bottom: 8em;
+    }
+    img {
+      margin-left: 3%;
+      height: 20vw;
+      border-radius: 5px;
+      box-shadow: -10px 10px 1px rgba($color: $logo-color, $alpha: 0.8);
+
+      @include sm {
+        height: auto;
+        width: 85vw;
+      }
+    }
+    h3 {
+      font-weight: 700;
+      margin-bottom: 0.5em;
+      color: #fefefe;
+      font-size: 25px;
+      @include sm {
+        text-align: center;
+      }
+    }
+    p {
+      margin-bottom: 2em;
+      line-height: 25px;
+    }
+    .button__container {
+      width: 100%;
+      display: flex;
+      @include sm {
+        justify-content: space-evenly;
+      }
+      button {
+        width: 100px;
+        margin-right: 10px;
+        @include sm {
+          width: 150px;
+        }
+      }
+    }
+  }
 }

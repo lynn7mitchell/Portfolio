@@ -19,6 +19,9 @@ button {
 * {
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   height: 100vh;
   background: #121212;
@@ -128,21 +131,16 @@ header {
           font-size: 18px; } }
   header #down__arrow {
     cursor: pointer;
-    animation: slidein 2s;
-    position: absolute;
-    right: 50%; }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    animation: slidein 2s; }
 @keyframes slidein {
   to {
     opacity: 100; }
   from {
     opacity: 0; } }
-    header #down__arrow i {
-      font-size: 40px; }
-      @media (max-width: 576px) {
-        header #down__arrow i {
-          right: 45%;
-          bottom: -5em; } }
-
 h1 {
   font-weight: 700;
   font-size: 70px; }
@@ -166,5 +164,61 @@ button {
   max-width: 10rem;
   font-weight: 700;
   cursor: pointer; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 16em;
+  width: 90%; }
+  main h2 {
+    margin-bottom: 3em; }
+  main section {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    gap: 5em;
+    margin-bottom: 15em;
+    text-align: justify; }
+    @media (max-width: 576px) {
+      main section {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 8em; } }
+    main section img {
+      margin-left: 3%;
+      height: 20vw;
+      border-radius: 5px;
+      box-shadow: -10px 10px 1px rgba(54, 164, 220, 0.8); }
+      @media (max-width: 576px) {
+        main section img {
+          height: auto;
+          width: 85vw; } }
+    main section h3 {
+      font-weight: 700;
+      margin-bottom: 0.5em;
+      color: #fefefe;
+      font-size: 25px; }
+      @media (max-width: 576px) {
+        main section h3 {
+          text-align: center; } }
+    main section p {
+      margin-bottom: 2em;
+      line-height: 25px; }
+    main section .button__container {
+      width: 100%;
+      display: flex; }
+      @media (max-width: 576px) {
+        main section .button__container {
+          justify-content: space-evenly; } }
+      main section .button__container button {
+        width: 100px;
+        margin-right: 10px; }
+        @media (max-width: 576px) {
+          main section .button__container button {
+            width: 150px; } }
 
 /*# sourceMappingURL=style.css.map */
