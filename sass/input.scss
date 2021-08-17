@@ -1,4 +1,5 @@
-// @import url("https://fonts.googleapis.com/css?family=Roboto");
+// Lato font
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 // RESET
 body,
@@ -64,446 +65,6 @@ $screen-xl-min: 1200px;
     @content;
   }
 }
-
-// * {
-//   box-sizing: border-box;
-//   font-family: "Roboto", sans-serif;
-// }
-
-// html {
-//   scroll-behavior: smooth;
-// }
-
-// $logo-color: $logo-color;
-
-// body {
-//   background: #f8f8f8;
-//   line-height: 30px;
-// }
-
-// // HEADER
-// .background__img {
-//   background: url("../img/background.jpg") center no-repeat;
-//   background-size: cover;
-//   height: 100vh;
-//   position: relative;
-//   display: flex;
-// }
-
-// #logo {
-//   height: 10vh;
-//   margin: 1em 0 1em 4em;
-//   position: absolute;
-//   z-index: 2;
-
-//   @include sm {
-//     height: 7.5vh;
-//     margin: 1.5em 0 1em 1.5em;
-//   }
-// }
-
-// nav {
-//   position: fixed;
-//   background: rgba(0, 0, 0, 0.9);
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   height: 100%;
-//   width: 100%;
-//   color: #fff;
-//   display: none;
-//   z-index: 1;
-
-//   ul {
-//     list-style-type: none;
-//     display: flex;
-//     flex-direction: column;
-//     height: 100%;
-//     justify-content: center;
-//     align-items: center;
-//     a {
-//       color: #fff;
-//       text-decoration: none;
-//       margin-bottom: 5%;
-//       @include sm {
-//         margin-bottom: 15%;
-//       }
-//     }
-
-//     li {
-//       font-size: 2em;
-//     }
-//   }
-// }
-
-// .menu__toggle {
-//   margin: 1.5em 4em 1em 0;
-//   // position: absolute;
-//   position: fixed;
-//   right: 0;
-//   z-index: 2;
-//   height: 6vh;
-
-//   @include sm {
-//     height: 5.5vh;
-//     margin: 2em 1.5em 1em 0;
-//   }
-// }
-
-// #menuToggleX {
-//   display: none;
-// }
-
-// .header__text {
-//   color: #fff;
-//   height: 100%;
-//   margin: 0 4em 0 4em;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-
-//   h1 {
-//     font-size: 70px;
-//     margin-bottom: 0.5em;
-//   }
-
-//   p {
-//     font-size: 24px;
-//   }
-
-//   @include sm {
-//     margin-left: 1.5em;
-//     margin-right: 1.5em;
-//     text-align: center;
-
-//     h1 {
-//       font-size: 30px;
-//       margin-bottom: 0.5em;
-//     }
-
-//     p {
-//       font-size: 16px;
-//       line-height: 23px;
-//     }
-//   }
-// }
-
-// .down__icon {
-//   height: 6vh;
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   margin: auto;
-//   margin-bottom: 5em;
-// }
-
-// main {
-//   margin: 0 4em 0 4em;
-
-//   @include sm {
-//     margin-left: 1.5em;
-//     margin-right: 1.5em;
-//   }
-// }
-
-// // ABOUT ME
-// #about__me {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   grid-template-areas:
-//     "about__me__heading about__me__img"
-//     "about__me__paragraph about__me__img";
-//   align-items: center;
-//   margin-top: 10em;
-
-//   h2 {
-//     font-size: 65px;
-//     grid-area: about__me__heading;
-//     margin-bottom: 1em;
-//   }
-
-//   p {
-//     font-size: 20px;
-//     grid-area: about__me__paragraph;
-//     color: #808080;
-//   }
-
-//   img {
-//     height: 55vh;
-//     grid-area: about__me__img;
-//     justify-self: center;
-//     align-self: center;
-//   }
-//   a {
-//     color: $logo-color;
-//     text-decoration: none;
-//   }
-//   @include sm {
-//     grid-template-columns: 1fr;
-//     grid-template-areas:
-//       "about__me__heading"
-//       "about__me__img"
-//       "about__me__paragraph";
-//     margin-top: 3em;
-
-//     h2 {
-//       font-size: 26px;
-//     }
-
-//     p {
-//       font-size: 16px;
-//     }
-
-//     img {
-//       height: 28vh;
-//       margin-top: 1.5em;
-//       margin-bottom: 2em;
-//     }
-//   }
-// }
-
-// // PORTFOLIO
-
-// #portfolio {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   grid-template-areas:
-//     "portfolio__heading ."
-//     "japanese__writing__web japanese__writing__info"
-//     "feed__web feed__info"
-//     "budget__web budget__info";
-//   // "youthgroup__web youthgroup__info";
-//   row-gap: 110px;
-
-//   @include sm {
-//     row-gap: 20px;
-//   }
-
-//   align-items: center;
-//   margin-top: 10em;
-
-//   h2 {
-//     font-size: 65px;
-//     grid-area: portfolio__heading;
-//     margin-bottom: 1em;
-//   }
-
-//   h3 {
-//     font-size: 40px;
-//     margin-bottom: 0.5em;
-//   }
-
-//   p {
-//     font-size: 20px;
-//     color: #808080;
-//   }
-
-//   img {
-//     height: 45vh;
-//   }
-
-//   #portfolio__heading {
-//     grid-area: portfolio__heading;
-//   }
-//   #feed__web {
-//     grid-area: feed__web;
-//   }
-//   #feed__info {
-//     grid-area: feed__info;
-//   }
-//   #japanese__writing__web {
-//     grid-area: japanese__writing__web;
-//   }
-//   #japanese__writing__info {
-//     grid-area: japanese__writing__info;
-//   }
-//   #budget__web {
-//     grid-area: budget__web;
-//   }
-//   #budget__info {
-//     grid-area: budget__info;
-//   }
-//   #youthgroup__web {
-//     grid-area: youthgroup__web;
-//   }
-//   #youthgroup__info {
-//     grid-area: youthgroup__info;
-//   }
-
-//   button {
-//     background: $logo-color;
-//     border: none;
-//     border-radius: 4px;
-//     padding: 5px 10px 5px 10px;
-//     margin-top: 1em;
-//     color: #fff;
-//     font-family: "Roboto", sans-serif;
-//   }
-
-//   @include sm {
-//     grid-template-columns: 1fr;
-//     grid-template-areas:
-//       "portfolio__heading"
-//       "japanese__writing__web"
-//       "japanese__writing__info"
-//       "feed__web"
-//       "feed__info"
-//       "budget__web"
-//       "budget__info";
-
-//     h2 {
-//       font-size: 26px;
-//     }
-
-//     h3 {
-//       font-size: 20px;
-//       text-align: center;
-//     }
-
-//     p {
-//       font-size: 16px;
-//       text-align: center;
-//     }
-
-//     img {
-//       height: auto;
-//       width: 70vw;
-//       margin-top: 1.5em;
-//       margin-bottom: 2em;
-//       margin: 0 auto;
-//     }
-
-//     .button__container {
-//       display: flex;
-//       justify-content: center;
-//       margin-bottom: 5em;
-
-//       button {
-//         margin-left: 10px;
-//         margin-right: 10px;
-//       }
-//     }
-//   }
-// }
-
-// // GRAPHIC DESIGN SECTION BEING WORKED ON
-
-// #graphic__portfolio {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   grid-template-areas:
-//     "book__covers__info"
-//     "all__logos__info"
-//     "mrbones__info"
-//     "gorillaz__info"
-//     "code__now__info";
-
-//   row-gap: 110px;
-
-//   #book__covers__info {
-//     grid-area: book__covers__info;
-//   }
-//   #all__logos__info {
-//     grid-area: all__logos__info;
-//   }
-//   #mrbones__info {
-//     grid-area: mrbones__info;
-//   }
-//   #gorillaz__info {
-//     grid-area: gorillaz__info;
-//   }
-//   #code__now__info {
-//     grid-area: code__now__info;
-//   }
-
-//   @include sm {
-//     grid-template-columns: 1fr;
-//     grid-template-areas:
-//       " .  book__covers__info"
-//       " . all__logos__info"
-//       " . mrbones__info"
-//       " . gorillaz__info"
-//       ". code__now__info";
-//   }
-// }
-
-// // CONTACT
-
-// #contact {
-//   display: grid;
-//   grid-template-columns: 2fr 1fr;
-//   grid-template-areas:
-//     "contact__heading ."
-//     "contact__paragraph .";
-//   align-items: center;
-//   margin-top: 10em;
-
-//   h2 {
-//     font-size: 65px;
-//     grid-area: contact__heading;
-//     margin-bottom: 1em;
-//   }
-
-//   p {
-//     font-size: 20px;
-//     grid-area: contact__paragraph;
-//     color: #808080;
-//   }
-//   a {
-//     color: $logo-color;
-//     text-decoration: none;
-//   }
-//   @include sm {
-//     grid-template-columns: 1fr;
-//     grid-template-areas:
-//       "contact__heading"
-//       "contact__paragraph";
-//     margin-top: 3em;
-
-//     h2 {
-//       font-size: 26px;
-//     }
-
-//     p {
-//       font-size: 16px;
-//     }
-//   }
-// }
-
-// footer {
-//   margin-top: 10%;
-//   padding-top: 1em;
-//   text-align: center;
-//   color: #fff;
-//   background: #3091c2;
-
-//   p {
-//     margin-bottom: 0.5em;
-//   }
-
-//   .footer__icons {
-//     display: flex;
-//     justify-content: space-evenly;
-
-//     img {
-//       width: 5vw;
-//       margin-bottom: 1em;
-
-//       @include sm {
-//         width: 10vh;
-//       }
-//     }
-//   }
-
-//   .copyright {
-//     background: #17455c;
-//     padding-bottom: 0.5em;
-//     padding-top: 0.5em;
-//   }
-// }
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 $logo-color: #36a4dc;
 
@@ -706,6 +267,7 @@ main {
     margin-bottom: 3em;
   }
   section {
+    animation: slidein 2s;
     display: flex;
     justify-content: space-around;
     align-content: center;
@@ -754,6 +316,53 @@ main {
         @include sm {
           width: 150px;
         }
+      }
+    }
+
+    form {
+      justify-self: flex-start;
+      align-self: flex-start;
+      width: 40%;
+      margin-left: -10%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      column-gap: 1em;
+      row-gap: 1em;
+      div {
+        width: 100%;
+
+        label {
+          margin-bottom: 10px;
+          display: block;
+        }
+        input,
+        textarea {
+          background: #1e1e1e;
+          border: #1e1e1e solid 0;
+          border-radius: 5px;
+
+          color: #fefefe;
+          width: 100%;
+        }
+        input {
+          height: 30px;
+        }
+        input:focus {
+          border-bottom: 2px solid $logo-color;
+        }
+      }
+      #textarea {
+        grid-column: 1/3;
+        width: 100%;
+      }
+      textarea {
+        width: 100%;
+        height: 100px;
+        resize: none;
+      }
+      textarea:focus {
+        border-bottom: 2px solid $logo-color;
       }
     }
   }

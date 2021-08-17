@@ -176,7 +176,6 @@ main {
   main h2 {
     margin-bottom: 3em; }
   main section {
-    animation: slidein 2s;
     display: flex;
     justify-content: space-around;
     align-content: center;
@@ -221,40 +220,5 @@ main {
         @media (max-width: 576px) {
           main section .button__container button {
             width: 150px; } }
-    main section form {
-      justify-self: flex-start;
-      align-self: flex-start;
-      width: 40%;
-      margin-left: -10%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      column-gap: 1em;
-      row-gap: 1em; }
-      main section form div {
-        width: 100%; }
-        main section form div label {
-          margin-bottom: 10px;
-          display: block; }
-        main section form div input,
-        main section form div textarea {
-          background: #1e1e1e;
-          border: #1e1e1e solid 0;
-          border-radius: 5px;
-          color: #fefefe;
-          width: 100%; }
-        main section form div input {
-          height: 30px; }
-        main section form div input:focus {
-          border-bottom: 2px solid #36a4dc; }
-      main section form #textarea {
-        grid-column: 1/3;
-        width: 100%; }
-      main section form textarea {
-        width: 100%;
-        height: 100px;
-        resize: none; }
-      main section form textarea:focus {
-        border-bottom: 2px solid #36a4dc; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=input.css.map */
