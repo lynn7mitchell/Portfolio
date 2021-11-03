@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 body,
 h1,
 h2,
@@ -25,8 +25,8 @@ html {
 body {
   height: 100vh;
   background: #121212;
-  color: #fefefe;
-  font-family: "Lato", sans-serif; }
+  color: #fff;
+  font-family: "Roboto", sans-serif; }
 
 nav {
   width: 100%;
@@ -169,7 +169,7 @@ h2 {
       font-size: 25px; } }
 
 button {
-  background: #46a3dc;
+  background: #2985BB;
   color: #fefefe;
   margin-top: 1%;
   border-radius: 10px;
