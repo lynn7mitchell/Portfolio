@@ -148,7 +148,6 @@ nav {
     }
   }
 }
-
 header {
   height: 50%;
   position: relative;
@@ -213,6 +212,7 @@ header {
         margin-right: 20px;
       }
     }
+    
     p {
       color: #46a3dc;
       font-size: 24px;
@@ -279,6 +279,11 @@ main {
   width: 90%;
   h2 {
     margin-bottom: 3em;
+    position: relative;
+    span{
+      position: absolute;
+      top:-100px;
+    }
   }
   section {
     animation: slidein 2s;
